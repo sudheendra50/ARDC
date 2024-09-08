@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <link rel="icon" type="image/x-icon" href="vasavi.png ">
+    <style>
+        body {
+      margin: 0;
+      font-family:trebuchet ms;
+      color:#000000;
+      background-color: rgb(255,255,255);
+       overflow-y: scroll;
+       overflow-x: hidden;
+        } 
+     p {
+        padding-left:150px; 
+        padding-right:100px; 
+        font-size:17px; 
+        text-align: justify; 
+        text-justify: inter-word;
+      }
+     h2 {
+         font-size:1.2vw;
+         text-align:left;
+         padding-left:100px;
+         padding-top:10px;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:15px;          
+            text-align: center;
+            max-width: 5000px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container img {
+            max-width:17%; /* Adjust the width as needed */
+            height: auto;
+        }
+        .container .text {
+            flex: 1;
+            text-align: center;
+            margin: 0 10px; /* Adjust the margin as needed */
+        }
+         .header {
+            background: url('radio12.jpeg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .footer {
+   background-color: rgb(50,50,50); 
+   width:100%;
+   bottom:0px;
+   height:30vh;
+   position: static;
+   left: 0;
+   font-size:17px;
+   color:white;
+   padding:10px;
+   
+ }
+
+         .topnav
+      {
+       overflow: hidden;
+       background-color: rgb(127, 127, 127); /* Transparent black */
+       padding: 10px;
+       text-align: center;
+      z-index:1000;
+       max-width: 100%;
+       width: 800%;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      
+   }
+ .topnav a
+   {
+     float: left;
+     color: white;
+     text-align: center;
+     padding:14px 30px;
+     text-decoration:none;
+     font-size:17px;
+   }
+ .topnav a:hover
+   {
+     background-color: rgba(50,50,50);
+     color: #ffffff;
+   }
+ .topnav a.active {
+    background-color: rgb(50, 50, 50);
+     color: #ffffff;
+   }
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  
+}
+.sidebar {
+  margin: 0;
+  width: 20%;
+  background-color: rgb(50,50,50); 
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;  /* Makes the sidebar scrollable only if overflowed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+}
+
+.sidebar a {
+    padding: 25px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #ffffff;
+    display: flex;
+}
+.sidebar a:hover:not(.active) {
+   background: rgba(255, 255, 255, 0.5);
+     backdrop-filter: blur(10px);
+     color: #000000;
+ 
+}
+
+div.content {
+  margin-left: 290px;
+  padding: 1px 16px;
+  height:1500px;
+   overflow:auto;
+}
+
+
+@media (max-width: 768px) {
+  p {
+      padding-left: 5%; 
+      padding-right: 5%;
+      font-size: 14px;
+  }
+  h2 {
+      font-size: 4vw;
+      padding-left: 20px;
+  }
+  .container {
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+      font-size: 14px;
+  }
+  .container img {
+      max-width: 20%;
+      
+  }
+
+  .sidebar {
+      width: 100%;
+      height: auto;
+      position: static;
+  }
+  .sidebar a {
+      padding: 15px;
+      font-size: 14px;
+  }
+  div.content {
+      margin-left: 0;
+      padding: 10px;
+    
+  }
+ 
+  .header {
+      height: 40vh;
+  }
+  .footer {
+      height: 20vh;
+      bottom:0px;
+      width:100%;
+  }
+  summary {
+      font-size: 4vw;
+  }
+  .slideshow-container {
+      margin-left: 0;
+      max-width: 100%;
+  }
+  .prev, .next {
+      font-size: 14px;
+      padding: 10px;
+  }
+  .txt {
+      font-size: 17px;
+  }
+}
+
+    </style>
+</head>
+<body>
+  
+  <div class="sticky">
+    <div class="topnav">
+       
+ <a href="home.htm"><b>Home</b></a>
+ <a href="ardc.htm"><b>ARDC</b></a>
+ <a class="active" href="project.htm"><b>Project</b></a>
+ <a href="schedule.htm"><b>Schedule</b></a>
+ <a href="institutions.htm"><b>Institutions</b></a>
+ <a href="events.htm"><b>Events</b></a>
+ 
+ </div>
+ </div> 
+
+
+     <div class="sidebar">
+  <p style="color:#ffffff;text-align:center; font-size:19px; padding:10px;margin:0;">Table of Contents</p>
+  <a href="#About the Project">About the Project</a>
+  <a href="#Objectives">Objectives</a>
+  <a href="#Why do we want to do this project?">Why do we want to do this project?</a>
+  <a href="#What is our project plan?">What is our project plan?</a>
+  <a href="# How does our project align with ARDC's mission and granting goals?"> How does our project align with ARDC's mission and granting goals?</a>
+  <a href="#How does our project fulfil ARDC's open access goal?">How does our project fulfil ARDC's open access goal?</a>
+  <a href="#Who will carry out our project?">Who will carry out our project?</a>
+
+</div>
+
+
+<div class="content">
+
+
+
+   <div class="header">
+    <div class="container">
+        <img src="ardclogo.png" alt="ardclogo" width="250" height="200">
+        <div class="text">
+          <h1 style="font-size:1.8vw;color:white"> <b> Establishment of Analog/Digital network using amateur radio communication between Schools and Colleges </b></h1>
+        </div>
+        <img src="vasavi.png" alt="VCE LOGO"  width="200" height="200">
+    </div>
+   </div>
+
+ <h2 id="About the Project"><b><u>About the Project:</u></b> </h2>
+ 
+      <p> The proposed project focuses on the exploration and experimentation of digital technologies within the realm of amateur radio communications. This initiative is designed to span       a period of 12 months, during which a comprehensive study and practical application of various digital communication methods will be conducted.The primary objective of this project is to      develop and demonstrate a network model that effectively integrates modern digital technologies into amateur radio systems.</p>
+
+
+<h2 id="Objectives"><b><u>Objectives:</u></b> </h2>
+ 
+ <p>1. Establish Three (3) amateur radio club stations within One (1) school and Two (2) colleges to encourage students to explore & experiment radio communication techniques providing capabilities for digital network system to enhance communications capabilities of amateur radio service with systems that are dependable, secure, reliable amateur radio based messaging being made available to user communities as well as achieve last mile connectivity.</p>
+
+ <p >2. The technical capabilities of club station provides necessary infrastructure for hands-on experience with operating radio equipment, learning about radio waves, and to support understanding of different communication protocols. </p>
+
+ <p >3.  Encourage students to participate in collaborative projects with other schools or ham radio operators to deliver and exchange information of written messages, lists, graphics, images and pre-defined formatted documents to multiple recipients between amateur radio and internet user community for advancement of radio art. </p>
+
+  <p >4.  Use amateur radio as a platform for scientific experiments and research projects. Developing human resource among student community enabling them to explore topics such as radio propagation, antenna design, data transmission over radio waves upgrading technical skills.</p>
+
+   <p >5.  To engage user community in activities like seminars, workshops, participating in contests for Knowledge and Information Exchange. </p>
+
+<h2 id="Why do we want to do this project?"><b><u>Why do we want to do this project?</u></b> </h2>
+   <p ><b>Enhancing Education:</b>The project aims to enhance the educational experience of students by introducing them to the world of amateur radio. It provides them with practical, hands-on opportunities to apply their theoretical knowledge, develop technical skills, and explore the field of radio communication.<br><br>
+
+<b>Encouraging Amateur Radio as a Hobby:</b> The project aims to promote amateur radio as a hobby among students. By providing them with opportunities to explore radio communication, develop technical skills, and engage in activities such as contests, experiments, and public service events, it encourages lifelong learning and involvement in the amateur radio community.<br><br>
+
+<b>Emergency Preparedness:</b> The project recognizes the importance of amateur radio in emergency communication. By training students in emergency protocols, connecting them with local emergency response networks, and providing practical experience in communication during simulated emergency scenarios, it contributes to community resilience and preparedness.<br><br>
+
+<b>Amateur Radio Licensing:</b> Analog/digital networking can serve as a gateway for students to obtain their amateur radio licenses. This process educates them about regulatory requirements, ethical conduct, and responsible radio usage, instilling a sense of responsibility and adherence to rules and regulations.<br><br>
+
+<b>Life-Long Hobby:</b> By promoting analog/digital networking and encouraging active participation in amateur radio activities, schools and colleges contribute to the development of a life-long hobby for students. Amateur radio can be pursued as a rewarding and enriching pursuit throughout their lives, providing ongoing learning, personal growth, and connection with a global community of radio enthusiasts.</p>
+
+<h2 id="What is our project plan?"><b><u>What is our project plan?</u></b> </h2>
+
+   <p> <b>1.Resource Acquisition:</b></p>
+   <p>Procure amateur radio equipment, such as transceivers, antennas, and digital mode interfaces. The communication capabilities include HF/VHF/UHF with voice & data modes that can support Local/Regional/global Connectivity as well as to Space. This will also remain as a permanent gateway station in the region. <br>
+      <p> <b>2. Infrastructure Setup:</b></p>
+
+       <p >a. Conduct site surveys at participating schools/colleges to assess antenna placement, signal propagation, and interference factors.<br>b. Install and configure antennas, transceivers, and networking equipment.<br>c. Establish network connections between participating institutions, ensuring seamless communication.</p>
+
+       <p> <b>3. Training and Capacity Building:</b></p>
+
+       <p>a. Organize training sessions and workshops for students and educators to develop their knowledge and skills in amateur radio operation, networking protocols, and digital modes.<br>b. Provide hands-on training on operating radio equipment, understanding signal propagation, and utilizing digital modes for communication.</p>
+
+   <p > <b>4. Collaboration and Projects:</b></p>
+
+       <p>a. Facilitate collaborative projects among participating schools/colleges, encouraging the exchange of messages, experiments, and research activities.<br>b. Engage students in contests, field days, and public service events that demonstrate the practical applications of amateur radio by conducting events like fox hunt.</p>
+
+    <p> <b>5. Outreach and Promotion:</b></p>
+
+       <p>a. Organize events and presentations to raise awareness about amateur radio, highlighting the benefits and opportunities it offers.<br>b. Collaborate with educational organizations, amateur radio associations, and community groups to promote the project and its achievements.<br>c. Document and share success stories, case studies, and best practices to inspire other schools/colleges to establish similar networking initiatives.</p>
+
+       <p> <b>6. Project Evaluation and Reporting:</b></p>
+
+       <p>a. Evaluate the project's outcomes against the established metrics and objectives.<br>b. Prepare periodic progress reports and a final project report, documenting achievements, challenges, lessons learned, and recommendations for future initiatives.<br>c. Share the project's findings and outcomes with relevant stakeholders, educational communities, and funding organizations.</p>
+
+<h2 id=" How does our project align with ARDC's mission and granting goals?"><b> <u>How does our project align with ARDC's mission and granting goals?</u> </b></h2>
+
+<p><b>Promoting Amateur Radio:</b> The project aligns with ARDC's mission of promoting and advancing amateur radio as a valuable means of communication and technical exploration. By establishing analog/digital networking between schools and colleges, the project encourages students to explore and engage with amateur radio, fostering an interest in the hobby and its various aspects.<br><br>
+<b>Education and Capacity Building:</b> The project supports ARDC's goal of fostering education and capacity building within the amateur radio community. By integrating amateur radio into the educational system and providing hands-on experiences, the project enhances students' technical skills, knowledge of communication protocols, and understanding of radio waves and propagation.<br><br>
+<b>Collaboration and Networking:</b> The project encourages collaboration and networking, which aligns with ARDC's objective of fostering connections and partnerships within the amateur radio community. By facilitating collaborative projects between schools/colleges and engaging students with amateur radio operators worldwide, the project promotes the exchange of ideas, experiences, and cultural understanding.<br><br>
+<b>Outreach and Community Engagement:</b> The project promotes outreach and community engagement, which is often an important goal for organizations like ARDC. By establishing amateur radio clubs within schools/colleges and organizing public service events or contests, the project encourages involvement in the amateur radio community, raises awareness about the hobby, and showcases the benefits of amateur radio for emergency preparedness and public service.</p>
+
+<h2 id="How does our project fulfil ARDC's open access goal?"><b> <u>How does our project fulfil ARDC's open access goal?</u></b> </h2>
+
+<p>Project promotes a model for growth engine for amateur radio service by establishing amateur radio clubs within educational institutions like schools and colleges. This provides a platform for students to explore and engage with amateur radio service and learn about its various aspects.<br>
+By encouraging students to participate in radio communication experiments with voice and data modes with other schools and amateur radio operators worldwide, this project fosters community engagement and expands the Gateway-Network of amateur radio enthusiasts.<br>
+The hands-on experience with operating radio equipment, learning about radio waves, and understanding different communication protocols provided by this project contributes to making operating radio easier and more accessible to newcomers.<br>
+This project integrates amateur radio into the education system by incorporating it as club activity, offering licensing classes, and providing continuing education opportunities. This enhances students' knowledge and skills in the field of amateur radio.<br>
+This project also aligns with the education category by providing resources, training materials, and workshops that aim to educate students, educators, and the wider amateur radio community about analog/digital networking, communication protocols, and technological advancements.</p>
+<h2 id="Who will carry out our project?"><b><u> Who will carry out our project?</u></b></h2>
+<h2><b>  FACULTY COORDINATOR & PROJECT INVESTIGATOR:</b></h2>
+<p> <b>K. Krishna Kishore (VU2TBB)-PI</b>, Fellow IETE, Senior
+  Member IEEE, PhD in Wireless Communication
+  and signal processing M.Tech degree in Digital
+  Electronics and Communication Systems
+  (DECS) and a B.Tech degree in Electronics and
+  Communication Engineering (ECE). Currently,
+  working as Associate Professor in Department of ECE, Vasavi College of
+  engineering. Educated and experienced researcher in the field of Signal
+  processing, Wireless communication, Deep Learning and Machine learning.
+  Designed course objectives and learning outcomes using Bloom's
+  Taxonomy to foster critical thinking and problem-solving skills in students.
+  Developed assessments that aligned with different cognitive levels of
+  Bloom’s Taxonomy to measure student learning and growth. Implemented
+  instructional strategies that encouraged active engagement, such as projectbased learning and collaborative problem-solving activities, usage of ICT
+  tools and flipped learning to address various levels of Bloom's Taxonomy.
+  Published Many SCI and Scopus papers and three patents and one patent is
+  granted and awarded as a best patent award on 2019 by novel IPR Academy<br></p>
+
+  <h2><b>CO-PROJECT INVESTIGATOR:</b></h2>
+<p><b> Dr. E. Sreenivasa Rao</b>, Dr. E. Sreenivasa Rao is a Professor and Head of the ECE Department at Vasavi College of Engineering, Hyderabad, with over 27 years of experience in teaching, research, and training. He holds a Ph.D. in Computer Science from JNT University, Hyderabad, and has expertise in Communications, Computers, Circuits, and Systems. Dr. Rao is a life member of ISTE and a fellow of IETE. He has supervised over 20 M.E. projects and numerous B.E. projects and is currently guiding 8 research scholars. He has published extensively in international journals and conferences.
+
+Dr. Rao played a pivotal role in establishing the CISCO Local Academy and NI LABVIEW Academy at Vasavi College, receiving accolades such as the Best Local Academy Award from CISCO. He is also a member of the Strategic Plan Development Committee at VCE and serves on the Board of Governors at the Government Institute of Electronics, Secunderabad, and the Board of Studies at GNITS, Hyderabad.</p>
+
+</p>
+<div class="footer">
+
+  CONTACT <br><br>
+  
+  FACULTY COORDINATOR & PROJECT INVESTIGATOR: Dr.Krishna Kishore<br>
+  e-mail id: <a href="mailto: krishnakishore.k777@gmail.com">krishnakishore.k777@gmail.com</a><br><br>
+  CO-PROJECT INVESTIGATOR: Dr.E.Sreenivasa Rao<br>
+  e-mail id: <a href="mailto: e.sreenivasarao@staff.vce.ac.in">e.sreenivasarao@staff.vce.ac.in</a><br><br>
+  STUDENT COORDINATOR: V.Sudheendra Reddy<br>
+  e-mail id: <a href="mailto: sudheendra.reddy1729@gmail.com">sudheendra.reddy1729@gmail.com</a>
+ 
+ </div>
+</div>
+</body>
+</html>

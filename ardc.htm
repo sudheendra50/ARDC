@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARDC</title>
+    <link rel="icon" type="image/x-icon" href="vasavi.png">
+    <style>
+          body {
+      margin: 0;
+      font-family:trebuchet ms;
+      color:#000000;
+      background-color: rgb(255,255,255);
+       overflow-y: scroll;
+       overflow-x:hidden;
+        } 
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:15px;
+            text-align: center;
+            max-width: 5000px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container img {
+            max-width:20%; /* Adjust the width as needed */
+            height: auto;
+        }
+        .container .text {
+            flex: 1;
+            text-align: center;
+            color:#ffffff;
+            margin: 0 10px; /* Adjust the margin as needed */
+        }
+          p {
+        
+         margin-left:15%;
+         margin-right:15%;
+        font-size:1.2vw; 
+        text-align: justify; 
+        text-justify: inter-word;
+      }
+     h2 {
+         font-size:1.4vw;
+         text-align:left;
+         padding-left:100px;
+         padding-top:10px;
+        }
+
+         .header {
+            background: url('radio12.jpeg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+         
+
+         .topnav
+   {
+     overflow: hidden;
+        background-color: rgb(127, 127, 127);
+       padding: 10px;
+       text-align: center;
+       max-width: 99%;
+       width: 800%;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      
+   }
+ .topnav a
+   {
+     float: left;
+     color: white;
+     text-align: center;
+     padding:14px 30px;
+     text-decoration:none;
+     font-size:17px;
+   }
+ .topnav a:hover
+   {
+     background-color: rgba(50,50,50);
+     color: #ffffff;
+    
+   }
+ .topnav a.active {
+
+    background-color: rgb(50, 50, 50);
+    color: #ffffff;
+
+   }
+  tr:nth-child(odd) 
+{
+background-color: #e0e0e0;
+} 
+ 
+
+.slideshow-container {
+  max-width: 500px;
+  margin-left:100px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color:black;
+  background-color: rgba(255,255,255,0.8);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+
+.txt {
+  color: #f2f2f2;
+  font-size: 1vw;
+  padding: 8px 12px;
+  background-color: rgba(0,0,0,0.8);
+  position: relative;
+  bottom: 8px;
+  width: 95%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+
+
+   .footer {
+   background-color: rgb(50,50,50); 
+   width:100%;
+   bottom:0px;
+   height:30vh;
+   position: static;
+   left: 0;
+   font-size:17px;
+   color:white;
+   padding:10px;
+   
+ }
+ @media (max-width: 768px) {
+  p {
+      padding-left: 5%; 
+      padding-right: 5%;
+      font-size: 14px;
+  }
+  h2 {
+      font-size: 4vw;
+      padding-left: 20px;
+  }
+  .container {
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+      font-size: 14px;
+  }
+  .container img {
+      max-width: 20%;
+      
+  }
+  
+
+  .sidebar {
+    width:105%;
+      height: auto;
+      position: static;
+  }
+  .sidebar a {
+      padding: 15px;
+      font-size: 14px;
+  }
+  div.content {
+      margin-left: 0;
+      padding: 10px;
+    
+  }
+  
+  .header {
+      height: 40vh;
+      width:105%;
+  }
+  .footer {
+      height: 20vh;
+      bottom:0px;
+      width:105%;
+  }
+  summary {
+      font-size: 4vw;
+  }
+  .slideshow-container {
+      margin-left: 0;
+      max-width: 100%;
+  }
+  .prev, .next {
+      font-size: 14px;
+      padding: 10px;
+  }
+  .txt {
+      font-size: 17px;
+  }
+}
+
+    </style>
+</head>
+<body>
+       <div class="header">
+    <div class="container">
+        <img src="ardclogo.png" alt="ardclogo" width="250" height="200">
+        <div class="text">
+          <h1 style="font-size:2.2vw;"> <b> Establishment of Analog/Digital network using amateur radio communication between Schools and Colleges </b></h1>
+        </div>
+        <img src="vasavi.png" alt="VCE LOGO"  width="200" height="200">
+    </div>
+   </div>
+   <div class="topnav">
+      
+<a href="home.htm"><b>Home</b></a>
+<a class="active" href="ardc.htm"><b>ARDC</b></a>
+<a href="project.htm"><b>Project</b></a>
+<a href="schedule.htm"><b>Schedule</b></a>
+<a href="institutions.htm"><b>Institutions</b></a>
+<a href="events.htm"><b>Events</b></a>
+
+</div>
+
+   <h2><b>ABOUT ARDC:</b> </h2>
+
+<p>
+Amateur Radio Digital Communications (ARDC) is a California-based foundation with roots in amateur radio and the technology of internet communication. ARDC's mission is to support, promote, and enhance digital communication and broader communication science and technology, to promote amateur radio, scientific research, experimentation, education, development, open access, and innovation in information and communication technology.<br><br>
+
+</p>
+<img src="ardclogo.png"  class="center" alt="ardclogo">
+
+
+<h2><b>MISSION:</b> </h2>
+
+<p>
+The mission of Amateur Radio Digital Communications (ARDC) is to support, promote, and enhance digital communication and broader communication science and technology, to promote Amateur Radio, scientific research, experimentation, education, development, open access, and innovation in information and communication technology.
+
+</p>
+
+<h2><b>VALUES:</b> </h2>
+<p>
+<b>Curiosity:</b> ARDC approaches people, projects, and situations with curiosity, asking questions before making assumptions. They actively look for opportunities to learn something new—particularly from their grantees and community members.<br><br>
+
+<b>Experimentalism:</b> They encourage their staff, volunteers, and grantees to try new things and take risks. Like good engineers and scientists, they ask that they share—and, if appropriate, document—what they learn, in service of supporting future experimentation and learning opportunities.<br><br>
+
+<b>Respect:</b> Respect may be defined as the due regard for the feelings, wishes, rights, experiences, or traditions of others. They ask that all employees, board members, volunteers, and grantees treat one another with this due regard and kindness, balancing both human-ness with professionalism in their interactions with one another.<br><br>
+
+<b>Accountability:</b> According to Wikipedia, “‘Accountability’ stems from late Latin accomptare (to account), a prefixed form of computare (to calculate).” As an organization that supports engineering as well as financial support and distribution, it’s important to them that their equations balance—in their projects, in their accounting, and between one another and the individuals and organizations they work with. If they do something wrong, they aim to make it right. To support healthy and workable relationships, they ask that their community, vendors, and grantees do the same.<br><br>
+
+<b>Openness & Transparency:</b> ARDC aims to operate in a way that is as open and transparent as possible. This includes publishing information about all of their grants, using and contributing to open-source software, making their tax returns and other records easily accessible, and communicating with honesty and truthfulness. They also expect that their grantees make their work available under open-source licenses or otherwise freely available.<br><br>
+
+<b>Inclusiveness:</b> One of ARDC's goals is to bring people into amateur radio and digital communications science and technology, both in the United States and internationally. In particular, they aim to help and invite in the kinds of people who have not historically been a part of the fields’ mainstream demographics. They rely on the values of Curiosity and Respect to make sure they create activities and spaces that allow for participation from people from all walks of life.<br><br>
+
+<b>Fairness:</b> As an organization that makes grants, it is important that they weave fairness into all that they do. This includes ensuring that grant and job applications are reviewed with consistent criteria.<br><br>
+
+<b>Generosity & Gratitude:</b> Last but not least, ARDC is a giving organization, so generosity and gratitude are core to who they are and what they do. This principle includes financial generosity and extends to making time for needed conversations, supporting one another in times of need, assuming best intentions in the event of a conflict, and being grateful that they get to do what they do every day, even the hard ones.
+
+
+
+<h2><b>ABOUT GRANT PROGRAM:</b> </h2>
+
+<p>
+In 2019, ARDC realized that radio amateurs would probably never use the entire block of addresses and decided to sell one-quarter of them. The organizational structure has been changed from a nonprofit corporation to a private foundation and established a grant program, using the proceeds of that sale to fund the program.
+
+ARDC makes grants to projects and organizations that are experimenting with new ways to advance both amateur radio and digital communication science. Experimentation by amateur radio operators has benefited society in many ways, including the development of the mobile phone and wireless internet technology. ARDC envisions a world where all such technology is available through open source hardware and software, and where anyone has the ability to innovate upon it.
+
+</p>
+<div class="footer">
+
+  CONTACT <br><br>
+  
+  FACULTY COORDINATOR: Dr.Krishna Kishore<br>
+  e-mail id: <a href="mailto: krishnakishore.k777@gmail.com">krishnakishore.k777@gmail.com</a><br><br>
+  STUDENT COORDINATOR: V.Sudheendra Reddy<br>
+  e-mail id: <a href="mailto: sudheendra.reddy1729@gmail.com">sudheendra.reddy1729@gmail.com</a>
+ 
+ </div>
+
+</body>
+</html>

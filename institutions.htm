@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSTITUTIONS</title>
+    <link rel="icon" type="image/x-icon" href="vasavi.png ">
+    <style>
+        body {
+      margin: 0;
+      font-family:trebuchet ms;
+      color:#ffffff;
+      background-color: rgb(255,255,255);
+       overflow-y: scroll;
+       overflow-x: hidden;
+        } 
+     p {
+      font-size:1.2vw;
+      text-align: justify; 
+      text-justify: inter-word;
+      }
+     h1 {
+         font-size:22px;
+         text-align:center;
+         padding-left:10px;
+         padding-top:10px;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:15px;          
+            text-align: center;
+            max-width: 5000px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container img {
+            max-width:17%; /* Adjust the width as needed */
+            height: auto;
+        }
+        .container .text {
+            flex: 1;
+            text-align: center;
+            margin: 0 10px; /* Adjust the margin as needed */
+        }
+         .header {
+            background: url('radio12.jpeg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .footer {
+   background-color: rgb(50,50,50); 
+   width:100%;
+   bottom:0px;
+   height:30vh;
+   position: static;
+   left: 0; 
+   font-size:17px;
+   color:white;
+   padding:10px;
+
+   
+ }
+
+
+         .topnav
+   {
+     overflow: hidden;
+       background-color: rgb(127, 127, 127); /* Transparent black */
+       padding: 10px;
+       text-align: center;
+      z-index:1000;
+       max-width: 100%;
+       width: 800%;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      
+   }
+ .topnav a
+   {
+     float: left;
+     color: white;
+     text-align: center;
+     padding:14px 30px;
+     text-decoration:none;
+     font-size:17px;
+   }
+ .topnav a:hover
+   {
+     background-color: rgba(50,50,50);
+     color: #ffffff;
+   }
+ .topnav a.active {
+    background-color: rgb(50, 50, 50);
+     color: #ffffff;
+   }
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  
+}
+
+.sidebar {
+  margin: 0;
+  width: 20%;
+  background-color: rgb(50,50,50); 
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;  /* Makes the sidebar scrollable only if overflowed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+}
+
+.sidebar a {
+    padding: 25px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #ffffff;
+    display: flex;
+}
+
+.sidebar a:hover:not(.active) {
+   background: rgba(255, 255, 255, 0.5);
+     backdrop-filter: blur(10px);
+     color: #000000;
+ 
+}
+
+ .container1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(120, 120, 120); 
+            border-radius: 3px;
+            margin: 25px 50px 75px 100px;
+            padding:8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+        }
+        .container1 img {
+            max-width:80%; /* Adjust the width as needed */
+            height: auto;
+            padding:10px;
+        }
+        .container1 .text {
+            flex: 1;
+            text-align: center;
+        }
+
+
+div.content {
+  margin-left: 290px;
+  padding: 1px 16px;
+  height:1000px;
+   overflow: auto;
+}
+
+@media (max-width: 800px) {
+  p {
+      padding-left: 5%; 
+      padding-right: 5%;
+      font-size: 12px;
+      color:#000000;
+  }
+  h1{
+      font-size: 14px;
+      color:#000000;
+      padding-left: 20px;
+  }
+  .container {
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+      font-size: 17px;
+  }
+  .container img {
+      max-width: 20%;
+      
+  }
+  .container1 {
+    display: block;
+    align-items: center;
+    width:95%;
+    background-color: white;
+    margin: 2px 50px 7px 10px;
+    padding:2px;
+    
+}
+   
+.container1 img {
+  max-width:90%; /* Adjust the width as needed */
+  height: auto;
+  padding:10px;
+}
+.container1 .text {
+  flex: 1;
+  text-align: center;
+}
+
+  .sidebar {
+      width: 105%;
+      height: auto;
+      position: static;
+  }
+  .sidebar a {
+      padding: 15px;
+      font-size: 14px;
+  }
+  div.content {
+      margin-left: 0;
+      padding: 10px;
+    
+  }
+  
+  .header {
+      height: 40vh;
+      width:115%;
+  }
+  .footer {
+      height: 20vh;
+      bottom:0px;
+      width:105%;
+  }
+  summary {
+      font-size: 4vw;
+  }
+  .slideshow-container {
+      margin-left: 0;
+      max-width: 100%;
+  }
+  .prev, .next {
+      font-size: 14px;
+      padding: 10px;
+  }
+  .txt {
+      font-size: 17px;
+  }
+}
+
+    </style>
+</head>
+<body>
+  <div class="sticky">
+    <div class="topnav">
+       
+ <a href="home.htm"><b>Home</b></a>
+ <a href="ardc.htm"><b>ARDC</b></a>
+ <a  href="project.htm"><b>Project</b></a>
+ <a href="schedule.htm"><b>Schedule</b></a>
+ <a class="active" href="institutions.htm"><b>Institutions</b></a>
+ <a href="events.htm"><b>Events</b></a>
+ 
+ </div>
+ </div>
+ 
+      
+
+
+     <div class="sidebar">
+  <p style="color:#ffffff;text-align:center; font-size:19px; padding:10px;margin:0;">Table of Contents</p>
+  <a href="#VASAVI COLLEGE OF ENGINEERING">VASAVI COLLEGE OF ENGINEERING</a>
+  <a href="#VASAVI POLYTECHNIC COLLEGE">VASAVI POLYTECHNIC COLLEGE</a>
+  <a href="#VASAVI PUBLIC SCHOOL">VASAVI PUBLIC SCHOOL</a>
+
+</div>
+
+<div class="content">
+
+
+
+   <div class="header">
+    <div class="container">
+        <img src="ardclogo.png" alt="ardclogo" width="250" height="200">
+        <div class="text">
+          <h1 style="font-size:1.8vw;color:white"> <b> Establishment of Analog/Digital network using amateur radio communication between Schools and Colleges </b></h1>
+        </div>
+        <img src="vasavi.png" alt="VCE LOGO"  width="200" height="200">
+    </div>
+   </div>
+
+<br id="VASAVI COLLEGE OF ENGINEERING">
+<div class="container1">
+
+        <img src="vasaviclg1.jpg" alt="vasavi college of engineering " width="350" height="450">
+        <div class="text">
+          <h1 id="VASAVI COLLEGE OF ENGINEERING"><b> VASAVI COLLEGE OF ENGINEERING </b></h1>
+          <p>Vasavi College of Engineering Founded in 1981 by Vasavi Academy of Education, Vasavi College of Engineering represents a rich tradition of excellence in technology-based education. A premier-league institution among the affiliates of Osmania University, Vasavi College of Engineering owes its vision to Sri Pendekanti Venkata Subbaiah, a veteran statesman of Independent India. Vasavi College of Engineering, in its 42 years of existence, is a reputed institution in the State of Telangana. The college is ACCREDITED BY NAAC WITH 'A++' GRADE. The college in its pursuit for quality in technical education has earned 3rd ranking in the State and 32nd in the country (source: Hindustan Times on 24th June 2009).<br></p>
+
+<p >Location: 9-5-81, Ibrahimbagh,Hyderabad - 500031, Telangana, India </p>
+<p >For more info visit: <a href="https://www.vce.ac.in">www.vce.ac.in</a> </p>
+
+       <br  id="VASAVI POLYTECHNIC COLLEGE">
+        </div>
+    </div>
+  <div class="container1">
+        <div class="text">
+         <h1 > <b> VASAVI POLYTECHNIC COLLEGE </b></h1>
+          <p>Vasavi Polytechnic, a boon to the rural youth of Banaganapalle and it’s surrounding mandals of Kurnool District, is sponsored by Vasavi Academy of Education, which was established in 1984. This institution is situated in 15 acres of land at 1.5 K.ms away from Banaganapalle town towards Koilakuntla.
+
+Vasavi Polytechnic is Recognised by State Board of Technical Education & Training, Govt. of Andhra Pradesh and approved by All India Council for Technical Education (AICTE), Govt. of India.
+
+This polytechnic has been offering quality technical education to the students at diploma level.<br></p>
+
+<p >Location:Koilkuntla Road,Banaganapalle – 518 124,Kurnool District,Andhra Pradesh </p>
+<p>For more info visit: <a href="https://www.vasavipoly.ac.in">www.vasavipoly.ac.in</a> </p>
+
+
+    
+        </div>
+        <img src="vasavipoly.jpg" alt=" vasavi polytechnic college" width="350" height="300">
+      
+    </div>
+  <div class="container1">
+        <img src="vasavipublic.jpg" alt=" vasavi public school" width="350" height="300">
+        <div class="text">
+          <h1 id="VASAVI PUBLIC SCHOOL"> <b> VASAVI PUBLIC SCHOOL </b></h1>
+          <p>Vasavi Public School was established in August 1983 and has completed 32 years in imparting quality education. The school equips the children with knowledge and right values thus grooming the children in totality.
+
+The school is affiliated to Central Board of Secondary Education New Delhi. It is a co-educational English medium institution having classes from Pre-Primary to Class X.<br></p>
+
+<p >Location: 3-6-215, Himayatnagar, Hyderabad - 500 029,Telangana State </p>
+<p >For more info visit: <a href="https://www.vpshyd.ac.in">www.vpshyd.ac.in</a> </p>
+
+</div>
+</div>
+
+<div class="footer">
+
+  CONTACT <br><br>
+  
+  FACULTY COORDINATOR: Dr.Krishna Kishore<br>
+  e-mail id: <a href="mailto: krishnakishore.k777@gmail.com">krishnakishore.k777@gmail.com</a><br><br>
+  STUDENT COORDINATOR: V.Sudheendra Reddy<br>
+  e-mail id: <a href="mailto: sudheendra.reddy1729@gmail.com">sudheendra.reddy1729@gmail.com</a>
+ 
+ </div>
+</div>
+</body>
+</html>
+
+
+
+

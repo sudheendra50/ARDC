@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT</title>
+    <link rel="icon" type="image/x-icon" href="vasavi.png">
+    <style>
+          body {
+      margin: 0;
+      font-family:trebuchet ms;
+      color:#000000;
+      background-color: rgb(255,255,255);
+       overflow-y: scroll;
+       overflow-x:hidden;
+        } 
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:15px;
+            text-align: center;
+            max-width: 5000px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container img {
+            max-width:20%; /* Adjust the width as needed */
+            height: auto;
+        }
+        .container .text {
+            flex: 1;
+            text-align: center;
+            color:#ffffff;
+            margin: 0 10px; /* Adjust the margin as needed */
+        }
+          p {
+        
+         margin-left:17%;
+         margin-right:17%;
+        font-size:1.2vw; 
+        text-align: justify; 
+        text-justify: inter-word;
+      }
+     
+     h2 {
+         font-size:1.4vw;
+         text-align:left;
+         padding-left:200px;
+         padding-top:10px;
+        }
+
+         .header {
+            background: url('radio12.jpeg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+         
+
+
+        
+
+         .topnav
+   {
+     overflow: hidden;
+        background-color: rgb(127, 127, 127);
+       padding: 10px;
+       text-align: center;
+       max-width: 99%;
+       width: 800%;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      
+   }
+ .topnav a
+   {
+     float: left;
+     color: white;
+     text-align: center;
+     padding:14px 30px;
+     text-decoration:none;
+     font-size:17px;
+   }
+ .topnav a:hover
+   {
+     background-color: rgba(50,50,50);
+     color: #ffffff;
+    
+   }
+ .topnav a.active {
+
+    background-color: rgb(50, 50, 50);
+    color: #ffffff;
+
+   }
+  tr:nth-child(odd) 
+{
+background-color: #e0e0e0;
+} 
+ 
+
+.slideshow-container {
+  max-width: 500px;
+  margin-left:100px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color:black;
+  background-color: rgba(255,255,255,0.8);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+
+.txt {
+  color: #f2f2f2;
+  font-size: 1vw;
+  padding: 8px 12px;
+  background-color: rgba(0,0,0,0.8);
+  position: relative;
+  bottom: 8px;
+  width: 95%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+   .footer {
+   background-color: rgb(50,50,50); 
+   width:100%;
+   bottom:0px;
+   height:30vh;
+   position: static;
+   left: 0;
+   font-size:17px;
+   color:white;
+   padding:10px;
+  
+   
+ }
+ @media (max-width: 768px) {
+  p {
+      padding-left: 5%; 
+      padding-right: 5%;
+      font-size: 14px;
+  }
+  h2 {
+      font-size: 4vw;
+      padding-left: 20px;
+  }
+  .container {
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+      font-size: 14px;
+  }
+  .container img {
+      max-width: 20%;
+      
+  }
+  
+
+  .sidebar {
+    width:105%;
+      height: auto;
+      position: static;
+  }
+  .sidebar a {
+      padding: 15px;
+      font-size: 14px;
+  }
+  div.content {
+      margin-left: 0;
+      padding: 10px;
+    
+  }
+  
+  .header {
+      height: 40vh;
+      width:105%;
+  }
+  .footer {
+      height: 20vh;
+      bottom:0px;
+      width:105%;
+  }
+  summary {
+      font-size: 4vw;
+  }
+  .slideshow-container {
+      margin-left: 0;
+      max-width: 100%;
+  }
+  .prev, .next {
+      font-size: 14px;
+      padding: 10px;
+  }
+  .txt {
+      font-size: 17px;
+  }
+}
+
+    </style>
+</head>
+<body>
+       <div class="header">
+    <div class="container">
+        <img src="ardclogo.png" alt="ardclogo" width="250" height="200">
+        <div class="text">
+          <h1 style="font-size:2.2vw;"> <b> Establishment of Analog/Digital network using amateur radio communication between Schools and Colleges </b></h1>
+        </div>
+        <img src="vasavi.png" alt="VCE LOGO"  width="200" height="200">
+    </div>
+   </div>
+   <div class="topnav">
+      
+<a href="home.htm"><b>Home</b></a>
+<a href="ardc.htm"><b>ARDC</b></a>
+<a href="project.htm"><b>Project</b></a>
+<a href="schedule.htm"><b>Schedule</b></a>
+<a href="institutions.htm"><b>Institutions</b></a>
+<a class="active"href="events.htm"><b>Events</b></a>
+
+</div>
+
+   <h2><b>AWARENESS SESSION:</b> </h2>
+
+<p>
+ 
+The awareness session on HAM Radio at Vasavi Public School and Vasavi Polytechnic College was an engaging and informative event, designed to spark curiosity and deepen the understanding of the unique opportunities that HAM Radio offers. Dr. K Krishna Kishore, who led the session, took the participants on a journey through the rich history of HAM Radio both in India and globally. He illustrated how amateur radio has evolved, tracing its roots from the early experiments in wireless telegraphy to its current status as a sophisticated network of enthusiasts dedicated to communication, experimentation, and public service.<br><br>
+
+</p>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img src="schl1.jpeg" style="width:100%">
+  <div class="txt">Vasavi Public School</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img src="schl2.jpeg" style="width:100%">
+  <div class="txt">Vasavi Public School</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img src="schl3.jpeg" style="width:100%">
+  <div class="txt">Vasavi Public School</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 8</div>
+  <img src="schl.jpeg" style="width:100%">
+  <div class="txt">Vasavi Public School</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 8</div>
+  <img src="poly.jpeg" style="width:100%">
+  <div class="txt">Vasavi Polytechnic College</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 8</div>
+  <img src="poly2.jpeg" style="width:100%">
+  <div class="txt">Vasavi Polytechnic College</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 8</div>
+  <img src="poly3.jpeg" style="width:100%">
+  <div class="txt">Vasavi Polytechnic College</div>
+</div>  
+
+ <div class="mySlides fade">
+  <div class="numbertext">8 / 8</div>
+  <img src="poly5.jpeg" style="width:100%">
+  <div class="txt">Vasavi Polytechnic College</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span>
+</div>
+
+<p>
+
+Participants were given a detailed overview of the regulatory framework that governs HAM Radio in India, with a focus on the role of the Wireless Planning and Coordination (WPC) Wing under the Ministry of Communications. The session emphasized the importance of obtaining the proper license to operate HAM Radio, explaining the differences between various license grades and the privileges they offer.<br><br>
+
+A key highlight of the session was the discussion on the crucial role HAM Radio operators play in emergency situations. Their ability to establish communication networks independently of power grids and internet infrastructure makes them invaluable in times of crisis. Real-life examples were shared, showcasing how HAM Radio operators have been instrumental during past disasters, underscoring their role as unsung heroes.<br><br>
+
+Beyond the technical and regulatory aspects, the session also highlighted the educational and developmental benefits of HAM Radio, particularly for students. Engaging with HAM Radio was presented as a gateway to careers in STEM fields, offering hands-on experience in areas like electronics, telecommunications, and digital communication. The collaborative nature of HAM Radio activities, such as contests and field days, was shown to be an excellent way for students to develop teamwork and leadership skills.<br><br>
+
+
+The session also touched upon future trends in HAM Radio, including advancements in digital modes and software-defined radio (SDR), which are set to expand the capabilities of amateur radio operators. The importance of building a strong HAM Radio community was stressed, with participants encouraged to join local clubs, engage in online forums, and participate in events that foster collaboration and knowledge sharing.<br><br>
+
+By the end of the session, participants left not only with a wealth of knowledge about HAM Radio but also with a sense of encouragement to take the next steps toward becoming licensed operators. The hope is that this session will inspire more individuals, especially students, to explore the world of HAM Radio, contributing to its growth and ensuring it remains a vibrant and essential part of the communications landscape in the future.<br><br>
+</p>
+
+<div class="footer">
+
+ CONTACT <br><br>
+ 
+ FACULTY COORDINATOR: Dr.Krishna Kishore<br>
+ e-mail id: <a href="mailto: krishnakishore.k777@gmail.com">krishnakishore.k777@gmail.com</a><br><br>
+ STUDENT COORDINATOR: V.Sudheendra Reddy<br>
+ e-mail id: <a href="mailto: sudheendra.reddy1729@gmail.com">sudheendra.reddy1729@gmail.com</a>
+
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+
+</body>
+</html>
